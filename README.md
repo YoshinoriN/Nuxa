@@ -2,6 +2,8 @@
 
 This project is based on [Hexo](https://github.com/hexojs/hexo).
 
+> :warning: This project is experimental
+
 ## Motivation
 
 Customized Hexo for me.
