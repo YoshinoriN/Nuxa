@@ -19,27 +19,8 @@ describe('blockquote', () => {
     result.should.eql('<blockquote><footer><strong>John Doe</strong></footer></blockquote>');
   });
 
-  it('source', () => {
-    const result = bq('Jane Austen, Pride and Prejudice');
-    result.should.eql('<blockquote><footer><strong>Jane Austen</strong><cite>Pride and Prejudice</cite></footer></blockquote>');
-  });
-
   it('link', () => {
     const result = bq('John Doe https://hexo.io/');
     result.should.eql('<blockquote><footer><strong>John Doe</strong><cite><a href="https://hexo.io/">hexo.io</a></cite></footer></blockquote>');
-  });
-
-  it('link title', () => {
-    const result = bq('John Doe https://hexo.io/ Hexo');
-    result.should.eql('<blockquote><footer><strong>John Doe</strong><cite><a href="https://hexo.io/">Hexo</a></cite></footer></blockquote>');
-  });
-
-  it('titlecase', () => {
-    hexo.config.titlecase = true;
-
-    const result = bq('Jane Austen, pride and prejudice');
-    result.should.eql('<blockquote><footer><strong>Jane Austen</strong><cite>Pride and Prejudice</cite></footer></blockquote>');
-
-    hexo.config.titlecase = false;
   });
 });

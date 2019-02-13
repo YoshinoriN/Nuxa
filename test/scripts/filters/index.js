@@ -10,5 +10,4 @@ describe('Filters', () => {
   require('./post_permalink');
   require('./render_post');
   require('./save_database');
-  require('./titlecase');
 });
