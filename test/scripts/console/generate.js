@@ -136,20 +136,6 @@ describe('generate', () => {
     hexo.unwatch();
   }));
 
-  it('deploy', () => {
-    const deployer = sinon.spy();
-
-    hexo.extend.deployer.register('test', deployer);
-
-    hexo.config.deploy = {
-      type: 'test'
-    };
-
-    return generate({deploy: true}).then(() => {
-      deployer.calledOnce.should.be.true;
-    });
-  });
-
   it('update theme source files', () => Promise.all([
     // Add some source files
     fs.writeFile(pathFn.join(hexo.theme_dir, 'source', 'a.txt'), 'a'),

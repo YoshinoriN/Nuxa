@@ -2,7 +2,6 @@
 
 describe('Extend', () => {
   require('./console');
-  require('./deployer');
   require('./filter');
   require('./generator');
   require('./helper');
