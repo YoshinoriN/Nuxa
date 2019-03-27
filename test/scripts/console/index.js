@@ -4,7 +4,6 @@ describe('Console', () => {
   require('./clean');
   require('./config');
   require('./generate');
-  require('./migrate');
   require('./new');
   require('./publish');
   require('./render');
