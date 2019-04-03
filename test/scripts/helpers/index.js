@@ -15,7 +15,6 @@ describe('Helpers', () => {
   require('./list_categories');
   require('./list_posts');
   require('./list_tags');
-  require('./mail_to');
   require('./markdown');
   require('./number_format');
   require('./open_graph');
