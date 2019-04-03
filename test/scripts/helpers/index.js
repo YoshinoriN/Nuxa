@@ -22,8 +22,6 @@ describe('Helpers', () => {
   require('./partial');
   require('./relative_url');
   require('./render');
-  require('./search_form');
-  require('./tagcloud');
   require('./toc');
   require('./url_for');
 });
