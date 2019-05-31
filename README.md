@@ -1,40 +1,65 @@
-# Nuxa
+# Hexo
 
-This project is based on [Hexo](https://github.com/hexojs/hexo).
+[![Build Status](https://travis-ci.org/hexojs/hexo.svg?branch=master)](https://travis-ci.org/hexojs/hexo)  [![NPM version](https://badge.fury.io/js/hexo.svg)](https://badge.fury.io/js/hexo) [![Coverage Status](https://coveralls.io/repos/hexojs/hexo/badge.svg?branch=master)](https://coveralls.io/r/hexojs/hexo?branch=master) [![Build status](https://ci.appveyor.com/api/projects/status/hpx3lduqjj2t6uqq/branch/master?svg=true)](https://ci.appveyor.com/project/tommy351/hexo/branch/master) [![Gitter](https://badges.gitter.im/hexojs/hexo.svg)](https://gitter.im/hexojs/hexo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Discord Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/teM2Anj)
+[![dependencies Status](https://david-dm.org/hexojs/hexo/status.svg)](https://david-dm.org/hexojs/hexo) [![devDependencies Status](https://david-dm.org/hexojs/hexo/dev-status.svg)](https://david-dm.org/hexojs/hexo?type=dev)
 
-> :warning: This project is experimental
+A fast, simple & powerful blog framework, powered by [Node.js](https://nodejs.org).
 
-## Motivation
+## Features
 
-Fully customized Hexo for me.
+- Blazing fast generating
+- Support for GitHub Flavored Markdown and most Octopress plugins
+- One-command deploy to GitHub Pages, Heroku, etc.
+- Powerful plugin system
 
-## Usaga
+## Installation
 
-### 1. Install [Hexo](https://github.com/hexojs/hexo).
-### 2. Update dependency
-
-Change your `package.json` below.
-
+``` bash
+$ npm install hexo-cli -g
 ```
-"hexo": "git+https://github.com/YoshinoriN/Nuxa.git#master",
+
+## Quick Start
+
+**Setup your blog**
+
+``` bash
+$ hexo init blog
+$ cd blog
 ```
 
-## Different with Hexo
+**Start the server**
 
-### Dropped feature
+``` bash
+$ hexo server
+```
 
-* (Tags) : [asset_path](https://github.com/YoshinoriN/Nuxa/commit/f3558c50647b4f4509a6b50dd39fba3316ba3296)
-* (Tags) : [asset_img, asset_link, gist, iframe, include_code, jsfiddle, pullquote, viemo, youtube](https://github.com/YoshinoriN/Nuxa/commit/98e2d040c13134e9f7a588244e8a4752614a0d6f)
-* (Tags) : [mail_to](https://github.com/YoshinoriN/Nuxa/commit/b4e7a45f412074319c6127d53e8d1004240fecc2)
-* (Tags) : [search_form, tagcloud](https://github.com/YoshinoriN/Nuxa/commit/ece42b8f0459a75788e2481614a74cf8688c96cc)
-* (Commands) : [meta_generator](https://github.com/YoshinoriN/Nuxa/commit/da3eb0aca9814e9ffb074557f2dac33eb054e6b7)
-* (Commands) : [deployer](https://github.com/YoshinoriN/Nuxa/commit/b27dd4983053366278fe5b02d42efd5939f97ef0)
+**Create a new post**
 
-### WIP
+``` bash
+$ hexo new "Hello Hexo"
+```
 
-* Use class declaration
-* Drop Swig
+**Generate static files**
 
-### Feedback to Hexo
+``` bash
+$ hexo generate
+```
 
-* TODO
+## More Information
+
+- Visit the [Awesome Hexo](https://github.com/hexojs/awesome-hexo) list
+- Read the [documentation](https://hexo.io/)
+- Find solutions in [troubleshooting](https://hexo.io/docs/troubleshooting.html)
+- Join discussion on [Google Group](https://groups.google.com/group/hexo)
+- See the [plugin list](https://hexo.io/plugins/) and the [theme list](https://hexo.io/themes/) on wiki
+- Follow [@hexojs](https://twitter.com/hexojs) for latest news
+
+## Contributing
+
+We welcome you to join the development of Hexo. Please see [contributing document](https://hexo.io/docs/contributing). 🤗
+
+Also, we welcome PR or issue to [official-plugins](https://github.com/hexojs).
+
+## License
+
+MIT
