@@ -9,7 +9,7 @@
   "scripts": {
     "eslint": "eslint-ci .",
     "test": "mocha test/index.js",
-    "test-cov": "istanbul cover --print both _mocha -- test/index.js",
+    "test-cov": "nyc npm run test",
     "lint-staged": "lint-staged"
   },
   "directories": {
@@ -69,10 +69,11 @@
     "eslint": "^5.16.0",
     "eslint-ci": "^1.0.0",
     "eslint-config-hexo": "^3.0.0",
-    "hexo-renderer-marked": "^0.3.0",
-    "istanbul": "^0.4.5",
+    "hexo-renderer-marked": "^1.0.1",
+    "mocha": "^6.0.0",
     "lint-staged": "^8.1.7",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "rewire": "^4.0.1",
     "sinon": "^7.3.2"
   },
